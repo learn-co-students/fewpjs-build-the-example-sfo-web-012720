@@ -12,7 +12,7 @@ let hearts = document.querySelectorAll('.like');
 
 function likeCall (event) {
   let heart = event.target;
-  mimicServerCall("derp")
+  mimicServerCall()
   .then(function(serverMessage){
     heart.innerText = heartStates[heart.innerText];
     heart.style.color = colorStates[heart.style.color];
