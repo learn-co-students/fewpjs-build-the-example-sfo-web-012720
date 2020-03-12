@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function(){
     .catch(error => {
       const modal = document.getElementById('modal')
       const modalMessage = document.getElementById('modal-message')
-      debugger
       modalMessage.textContent = error
       modal.classList.remove("hidden")
       setTimeout(() => modal.classList.add("hidden"), 5000)      
